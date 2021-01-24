@@ -39,7 +39,7 @@ class CampusCard:
             'exchangeFlag': True,
             'login': False,
             'serverPublicKey': '',
-            'deviceId': str(random.randint(999999999999999, 9999999999999999)),
+            'deviceId': str(random.randint(865441034733386, 865441034733394)),
             'wanxiaoVersion': 10462101,
             'rsaKey': {
                 'private': rsa_keys[1],
@@ -56,7 +56,7 @@ class CampusCard:
             resp = requests.post(
                 'https://app.17wanxiao.com/campus/cam_iface46/exchangeSecretkey.action',
                 headers={
-                    'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; HUAWEI MLA-AL10 Build/HUAWEIMLA-AL10)',
+                    'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 9; sagit-MI 6 Build/sagit-MI 6)',
                 },
                 json={
                     'key': self.user_info['rsaKey']['public']
@@ -93,8 +93,8 @@ class CampusCard:
             'requestMethod': 'cam_iface46/loginnew.action',
             'shebeixinghao': 'MLA-AL10',
             'systemType': 'android',
-            'telephoneInfo': '5.1.1',
-            'telephoneModel': 'HUAWEI MLA-AL10',
+            'telephoneInfo': '9',
+            'telephoneModel': 'sagit-MI 6',
             'type': '1',
             'userName': self.phone,
             'wanxiaoVersion': 10462101,
