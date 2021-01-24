@@ -521,8 +521,8 @@ def server_push(sckey, desp):
     :param desp: 需要推送的内容
     :return:
     """
-    send_url = f"https://sc.ftqq.com/{sckey}.send"
-    params = {"text": "健康打卡推送通知", "desp": desp}
+    send_url = f"https://qmsg.zendee.cn/send/{sckey}.send"
+    params = {"text": "健康打卡推送通知", "msg": msg}
     # 发送消息
     for _ in range(3):
         try:
