@@ -538,10 +538,10 @@ def server_push(sckey, desp):
             logging.warning("Server酱不起作用了，可能是你的sckey出现了问题也可能服务器波动了，正在重试......")
 
 
-def qq_mail_push(send_email, send_pwd, receive_email, check_info_list):
-    bj_time = datetime.datetime.utcnow() + datetime.timedelta(hours=8)
-    bj_time.strftime("%Y-%m-%d %H:%M:%S %p")
-    mail_msg_list = [f"""
+#def qq_mail_push(send_email, send_pwd, receive_email, check_info_list):
+#    bj_time = datetime.datetime.utcnow() + datetime.timedelta(hours=8)
+#    bj_time.strftime("%Y-%m-%d %H:%M:%S %p")
+#    mail_msg_list = [f"""
 <h2><center> >>>>  <a href="https://github.com/ReaJason/17wanxiaoCheckin-Actions">17wanxiaoCheckin-Actions</a>
 <<<<</center></h2>
 <h2><center>期待你的Star✨</center></h2>
